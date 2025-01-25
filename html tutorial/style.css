@@ -1,17 +1,225 @@
-h1{text-align: center;}
-
-
-
-
-
-
-body{
-    background-color:white;
-    font-style: italic;
-    
-    
+h1 {
+    text-align: center;
 }
+
+
+
+
+
+
+body {
+    background-color: rgb(8, 8, 8);
+    font-style: italic;
+    -webkit-text-fill-color: #f8f3f3;
+}
+
 .navbar-brand {
+    color: #000;
     font-weight: bold;
     font-size: 25px;
+}
+
+.main-bg {
+    padding: bottom 2px;
+    ;
+    margin-left: 20px;
+
+}
+
+.heading {
+    text-align: center;
+    padding: 2%
+}
+
+.image-container {
+    display: flex;
+    /* Align children in a row */
+    justify-content: space-between;
+    /* Equal space between items */
+    align-items: center;
+    /* Vertically center items */
+    padding: 20px;
+    width: 200px;
+    /* Adjust image size */
+    height: auto;
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+.Right-image {
+    float: right;
+    /* Align the image to the right */
+    width: 350px;
+    /* Adjust image size */
+    height: 215px;
+    border-radius: 8px;
+    /* Rounded corners */
+    margin-top: -240px;
+    /* Add spacing to the left of the image */
+    margin-right: 20px;
+}
+
+
+
+.container {
+    white-space: nowrap;
+    animation: popup 1.5s ease-out;
+
+}
+
+.divesh {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 120px;
+    color: #000;
+    animation: fadeInUp 3s ease-in-out
+}
+
+.arvind {
+    font-size: 1rem;
+    margin-left: 50px;
+    color: #555;
+    animation: fadeInUp 3.5s ease-in-out;
+}
+
+.challenge-button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fcf2f2;
+    background-color: #111010;
+    border: white;
+    padding: 10px 20px;
+
+
+
+
+
+
+
+
+    
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 170px;
+    animation: fadeInUp 3.9s ease-in-out;
+
+}
+
+.challenge-button:hover {
+    background-color: #f1ebeb;
+    transform: scale(1.1);
+}
+
+@keyframes popup {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Fade In and Move Up Animation */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+button {
+    margin-top: 10px;
+    /* Add spacing above button */
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer section start here*/
+
+.footer {
+    background-color: rgb(8, 8, 8);
+    color: #ee2323;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    color: rgb(212, 34, 34);
+    text-decoration-color: #f8f3f3;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #ca210a;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
